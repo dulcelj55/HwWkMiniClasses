@@ -1,11 +1,16 @@
-const returnPerson = (email, username, password)=>{
-const newPerson = {email: email, username: username, password:password}
-return newPerson
+class Person{
+
+constructor(email, username, password) {
+ this.email= email;
+ this.username= username; 
+ this.password= password;
 }
 
-const person1 = returnPerson ("Bob@bob.com","BobIsGreat","Pringles")
-const person2 = returnPerson ("Ringo@Beattles.com","Drumer","SheLovesMe")
-const person3 = returnPerson ("Seahawks@seahawks.com","Metcalf","fan12")
+}
+
+const person1 = new Person ("Bob@bob.com","BobIsGreat","Pringles")
+const person2 = new Person("Ringo@Beattles.com","Drumer","SheLovesMe")
+const person3 = new Person("Seahawks@seahawks.com","Metcalf","fan12")
 
 console.log (person1)
 console.log (person2)
